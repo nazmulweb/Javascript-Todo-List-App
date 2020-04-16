@@ -39,6 +39,11 @@ li{
     width: 100%;
     padding: 1.5rem;
     margin-bottom: 2rem;
+    border: .1rem solid #000;
+}
+
+.form input:focus{
+    outline: none;
 }
 
 .todo-list{
@@ -50,6 +55,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
 }
 
 .todo-letf{
@@ -73,3 +79,32 @@ li{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.tick{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: .3rem solid #333;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+  .tick::before {
+    content: '✓';
+    font-size: 20px;
+    display: none;
+  }
+
+  .done .tick::before {
+    display: inline;
+  }
