@@ -58,12 +58,8 @@ li{
     margin-bottom: 1.5rem;
 }
 
-.todo-letf{
-    display: flex;
-    align-items: center;
-}
-
-.todo-letf span{
+.todo-item span{
+    flex-grow: 1;
     margin-left: 1.5rem;
 }
 
@@ -78,6 +74,8 @@ li{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    cursor: pointer;
+    outline: none;
 }
 
 input[type="checkbox"]{
@@ -107,4 +105,8 @@ input[type="checkbox"]{
 
   .done .tick::before {
     display: inline;
+  }
+
+  .done span{
+      text-decoration: line-through;
   }
